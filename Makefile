@@ -8,7 +8,7 @@ bodies := $(wildcard flypy.body.*)
 all: flypy.mb
 
 flypy.mb: flypy.mb.txt
-	@txt2mb flypy.mb.txt flypy.mb
+	@./txt2mb flypy.mb.txt flypy.mb
 	@echo code table generated
 
 flypy.mb.txt: flypy.head flypy.body
